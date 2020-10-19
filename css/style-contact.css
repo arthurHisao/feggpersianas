@@ -1,0 +1,678 @@
+html, body {
+    overflow-x:hidden;
+}
+
+.phone-column {
+	background-color: #DFAD4C;
+}
+
+.phone-icon {
+	padding: 5px;
+	width: 24px;
+}
+
+.phone-link {
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+a:hover {
+	color: #FFF;
+}
+
+.phone:hover {
+	text-decoration: none;
+	color: #FFF;
+
+}
+
+.transparent-div {
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 1;
+}
+
+
+/*menu*/
+.mobile-menu {
+	display: none;
+}
+
+.navbar {
+	box-shadow: 0 5px 10px 2px rgba(0,0,0,.2);
+	height: 100px;
+}
+
+.nav-link {
+	text-align: center !important;
+	margin-right: 20px;
+}
+
+/*link atual página atual*/
+.current-link {
+	color: #B79937;
+	font-weight: bold;
+	font-family: "Source Sans Pro";
+	border-bottom: 2px solid currentColor;
+	/*padding: 5px;*/
+	padding-bottom: 8px;
+    font-size: 16px;
+    position: relative;
+
+}
+
+.current-link:hover {
+	color: #B79937;
+}
+
+/*links do menu*/
+.links {
+	color: #EACE51;
+	font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none !important;
+    font-family: "Source Sans Pro";
+    margin: 5px;
+}
+
+.links:hover {
+	color: #EACE51;
+}
+
+/*efeitos*/
+.links:after{
+    content: '';
+    position:absolute;
+    width: 0; 
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #B79937;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;   
+}
+
+.links:hover:after {
+    width: 100%;
+    left: 0;
+    background: #B79937;
+    /*margin-left: 15px;*/
+}
+
+.logo {
+	height: 85px;
+	width: 190px;
+	cursor: pointer;
+	margin-top: -10px;
+}
+
+
+.left-column {
+	width: 50%;
+	height: 70px;
+}
+
+.mobile-logo {display: none !important;}
+
+.center-column-logo {
+	text-align: center;
+	width: 15%;
+	height: 70px;
+	/*background-color: red;*/
+}
+
+.right-column {
+	width: 50%;
+	/*background-color: yellow;*/
+	text-align: center;
+	height: 70px;
+}
+
+.marg-top {
+	margin-top: -25px;
+}
+
+.link-container {
+	width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 40px;
+}
+
+/*menu dropdown*/
+.dropdown:hover .dropdown-content {  /* efeito hover exibe os liks*/
+	display: block;
+}
+
+.dropdown-content a { /* propriedade dos textos*/
+	float: none;
+	color: #EDCE51;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content a:hover { /* efeito hover sobre os links*/
+	color: #BEA21D;
+}
+.dropdown-content{  /*conteudo do submenu*/
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	z-index: 1;
+	box-shadow: 0 5px 10px 2px rgba(0,0,0,.2);
+	padding: 10px;
+}
+.dropbtn {
+	border: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #B79937;
+}
+
+.dropbtn:hover .arrow {
+  transform: rotate(180deg);
+  transition: all .20s ease-out;
+}
+
+/*fim menu*/
+
+
+/*fim menu*/
+
+.bg-image-mobile {display: none;}
+
+.bg-image {
+	padding: 100px;
+    background-color: #E0EAEA;
+    background-image: url(../img/persiana-aluminio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    color: #fff;
+    opacity: 0.9;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.45);
+}
+
+
+.content {
+	margin-top: 40px;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+
+.button {
+	background-color: #65DAF9;/*#4FC247; /*#007bff;*/
+	padding: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #838301; /*#65DAF9;*/
+	color: #FFF;
+	padding: 10px 15px;
+	border: 3px solid transparent;
+	transition: .5s;
+	border-radius: 5px;
+	font-family: "Source Sans Pro";
+	font-size: 14px;
+
+}
+
+.button:hover {
+	color: #FFF;
+	background-color: transparent;
+	border-color: #838301; /*#65DAF9;*/
+}
+
+.center-h2{
+	text-align: center;
+	width: 100%;
+	font-family: "Source Sans Pro" !important;
+	font-weight: bold;
+	font-size: 38px;	
+}
+
+p {
+	font-family: "Source Sans Pro";
+	font-size: 18px;
+	text-align: justify-all;
+	margin-bottom: 0 !important;
+}
+
+/*input text*/
+.stylized-area,
+.stylized-input{
+	outline: 0;
+	border-width: 0 0 1px;
+	border-color: #f7497d;
+	width: 100%;
+	height: 25px;
+	resize: none;
+}
+
+.stylized-area:focus,
+.stylized-input:focus {
+	border-width: 0 0 2px;	
+}
+
+
+.stylized-btn {
+	color: #FFF;
+	background-color: #218838;
+	padding: 10px;
+	width: 200px;
+	border: none;
+}
+
+/*classe do bootstrap*/
+.btn-link:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+
+/*segunda parte do site*/
+.img {
+	height: 410px;
+	width: 450px;
+    box-shadow: 0px 4px 10px rgba(169,169,169); /*rgba(255,101,47,.2);*/
+}
+
+
+/*Os items são as colunas onde as imagem ficam fixadas*/
+.img-container {
+    padding: 10px;
+}
+
+
+
+
+.button-mais {
+	background-color: #65DAF9;/*#4FC247; /*#007bff;*/
+	padding: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #838301; /*#65DAF9;*/
+	color: #FFF;
+	padding: 10px 15px;
+	border: 3px solid transparent;
+	border-radius: 5px;
+	font-family: "Source Sans Pro";
+	font-size: 14px;
+
+}
+
+.button-mais:hover {
+	color: #FFF; /*#65DAF9;*/
+	background-color: #8f8f1a;
+}
+
+
+/*botao para redirecionar pagina de serviços*/
+.btn-service-pg {
+	background-color: #EACE51;/*#4FC247; /*#007bff;*/
+	padding: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #838301; /*#65DAF9;*/
+	color: #FFF;
+	padding: 10px 15px;
+	border: 3px solid transparent;
+	transition: .5s;
+	border-radius: 5px;
+	font-family: "Source Sans Pro";
+	font-size: 14px;
+	box-shadow: 0 2px 5px rgba(255,101,47,.2);
+}
+
+.container {
+	max-width: 1000px !important;
+}
+
+
+.space-text {
+	margin-top: 45px;
+}
+
+
+.space {
+	margin-top: 100px;
+}
+
+
+.float-btn{
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	bottom: 60px;
+	right: 40px;
+	/*background-color: #0C9;*/
+	color: #fff;
+	text-align: center;
+	box-shadow: 1px 1px 1px #999;
+	z-index: 2;
+	border-radius: 30px;
+}
+
+
+/*rodape*/
+.mobile-footer {
+	display: none;
+}
+
+.desktop-footer {
+	display: block;
+}
+
+.footer-body {
+	background-color: #DFAD4C;
+	color: #fff;
+	height: 150px;
+	position: fixed;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.center-column-footer {
+	text-align: center;
+	width: 50%;
+	height: 70px;
+	/*background-color: red;*/
+}
+
+
+/*logo abaixo do rodape*/
+.bg-footer {
+	background-color: #333;
+	height: 85px;
+}
+
+.internal-space {
+	padding-top: 10px;
+}
+
+.developer {
+	padding: 10px;
+	width: 150px;
+}
+
+a{
+	text-decoration: none !important;	
+}
+
+.align-content {
+	padding-left: 100px;
+	text-align: left;
+	margin: 20px;
+}
+
+
+
+.address-title {
+	font-size: 20px;
+	padding-top: 20px;
+	font-weight: bold;
+}
+
+
+.address {
+	text-align: left;
+	width: 100%;
+	color: #fff;
+	text-decoration: none !important;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.address:hover {
+	color: #fff;
+	font-weight: bold;
+}
+
+.space-small {
+	margin-top: 5px;
+}
+
+.img-visa {
+	width: 150px;
+}
+
+
+@media only screen and (max-width:991px) {
+	
+	/*coluna de contato*/
+	.phone-column {display: none;}
+
+	/*coluna do logo desktop*/
+	.center-column-logo {display: none;}
+
+	/*coluna esquerda mobile e desktop*/
+	.left-column {
+		width: 10%;
+	}
+
+	/*coluna direita desktop*/
+	.right-column {display: none;}
+
+	/*coluna mobile logo*/
+	.center-column-mobile {
+		width: 90%;
+	}
+
+	.mobile-logo {
+		display: block !important;
+	}
+
+	.logo {
+		margin-top: 0;
+		width: 180px;
+	}
+
+	/*menu hamburger*/
+	.mobile-menu {
+		display: block;
+	}
+
+	.menu-btn {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+            z-index: 2;
+    }
+
+    /* forma a parte central -  do menu*/
+    .menu-btn_burger {
+            width: 30px;
+            height: 3px;
+            background: #000;
+            border-radius: 3px;
+            box-shadow: 0 2px 5px rgba(255,101,47,.2);
+            transition: all .5s ease-in-out; 
+    }
+
+
+
+    .menu-btn_burger::before,
+    .menu-btn_burger::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            background: #000;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255,101,47,.2);
+            /*delay da animacao*/
+            transition: all .5s ease-in-out;
+    }
+
+
+    /* forma a parte de cima -  do menu*/
+    .menu-btn_burger::before {
+            transform: translateY(-10px);
+            -moz-transform: translateY(-100px);
+            -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
+    }
+
+    /* forma a parte de baixo - do menu*/
+    .menu-btn_burger::after {
+            transform: translateY(10px);
+            -moz-transform: translateY(10px);
+            -webkit-transform: translateY(10px);
+            -ms-transform: translateY(10px);
+            -o-transform: translateY(10px);*/
+    }
+
+
+    /*animacao*/
+
+    .menu-btn.open .menu-btn_burger {
+            /*efeito da parte central do menu - mover a esquerda*/
+            transform: translateX(-50px);
+            -moz-translateX(-50px);
+            -webkit-translateX(-50px);
+            -ms-translateX(-50px);
+            -o-translateX(-50px);
+            /*efeito da parte central - desaparecer*/
+            background: transparent;
+            box-shadow: none;
+    }
+
+    /*faz o efeito do X*/
+    .menu-btn.open .menu-btn_burger::before {
+            transform: rotate(45deg) translate(35px, -35px); 
+    }
+
+    .menu-btn.open .menu-btn_burger::after {
+            transform: rotate(-45deg) translate(35px, 35px); 
+    }	
+
+    /*conteudo do menu*/
+	.bar {
+	    background-color: #DFAD4C;
+	    height:420px; 
+	    width:70vw;
+	    margin-left: 0;
+	    position: absolute;
+	    transition: all .2s linear;
+	    /*right: 0px;*/
+	    left: 0px;
+	    top: -420px;
+	    margin-top: 0px;
+	    z-index: 2;
+	    text-align: center;
+	    overflow: hidden;
+	}
+
+	.lateral_link {
+	    background-color: #DFAD4C;
+	    padding: 20px;
+	    font-family: 'Arial', 'New Times Roman';
+	    font-size: 10pt;
+	    transition: all .2s linear;
+	    color: #f4f4f9;
+	}
+
+	.lateral_link:hover{
+		font-weight: bold;
+	    color: black;
+	}
+
+	/*link do cabecalho desktop*/
+	.link-container {
+		display: none
+	}
+
+	/*imagem de background primeira parte do site*/
+	.bg-image {display: none;}
+
+	.bg-image-mobile {
+		display: block;
+		padding: 100px;
+	    background-color: #E0EAEA;
+	    background-image: url(../img/persiana-aluminio.png);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    background-attachment: local;
+	    height: auto;
+	    color: #fff;
+	    opacity: 0.9;
+	    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.45);
+	}
+
+
+	.center-h2 {
+		font-size: 30px !important;
+		font-family: "Source Sans Pro" !important;	
+	}
+
+	p {
+		font-size: 16px;
+		font-family: "Source Sans Pro";
+		text-align: justify-all;
+		margin-bottom: 0 !important;
+	}
+	
+	/*imagem mobile*/
+	.img {
+		width: 55vw;
+		height: 45vw;
+	}
+
+	/*rodape*/
+	.footer-column {
+		padding: 40px;
+	}
+
+	.address-title {
+		font-size: 18px !important; 
+	}
+
+	.address {
+		font-size: 14px !important;
+		text-align: center;
+	}
+
+	.mobile-footer {
+		display: block;
+	}
+
+	.footer-body-mobile {
+		background-color: #333333;
+		color: #fff;
+		width: 100%;
+		height: 470px;
+	}
+
+	.desktop-footer {
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width:340px) {
+	.button {display: none;}
+}
