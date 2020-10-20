@@ -186,10 +186,8 @@ a:hover {
   transform: rotate(180deg);
   transition: all .20s ease-out;
 }
-
 /*fim menu*/
 
-/*fim menu*/
 
 .bg-image-mobile {display: none;}
 
@@ -297,7 +295,6 @@ p {
 	height: 20px;
 	bottom: 60px;
 	right: 40px;
-	/*background-color: #0C9;*/
 	color: #fff;
 	text-align: center;
 	box-shadow: 1px 1px 1px #999;
@@ -511,7 +508,6 @@ a{
 	    margin-left: 0;
 	    position: absolute;
 	    transition: all .2s linear;
-	    /*right: 0px;*/
 	    left: 0px;
 	    top: -420px;
 	    margin-top: 0px;
@@ -523,7 +519,7 @@ a{
 	.lateral_link {
 	    background-color: #DFAD4C;
 	    padding: 20px;
-	    font-family: 'Arial', 'New Times Roman';
+	    font-family: 'Source Sans Pro";
 	    font-size: 10pt;
 	    transition: all .2s linear;
 	    color: #f4f4f9;
