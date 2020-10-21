@@ -463,25 +463,25 @@ a{
     /*conteudo do menu*/
 	.bar {
 	    background-color: #DFAD4C;
-	    height:420px; 
+	    height:440px; 
 	    width:70vw;
 	    margin-left: 0;
 	    position: absolute;
 	    transition: all .2s linear;
 	    /*right: 0px;*/
 	    left: 0px;
-	    top: -420px;
+	    top: -440px;
 	    margin-top: 0px;
 	    z-index: 2;
 	    text-align: center;
 	    overflow: hidden;
+	    font-size: 16px;
+	    font-family: "Source Sans Pro";
 	}
 
 	.lateral_link {
 	    background-color: #DFAD4C;
 	    padding: 20px;
-	    font-family: 'Arial', 'New Times Roman';
-	    font-size: 10pt;
 	    transition: all .2s linear;
 	    color: #f4f4f9;
 	}

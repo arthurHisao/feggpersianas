@@ -2,7 +2,7 @@
         $('.menu-btn').on('click', function(event) {
             if(!($('.menu-btn').hasClass('open'))) {
                 $('.menu-btn').toggleClass('open');
-                $('.bar').css({'transform': 'translateY(520px)'});
+                $('.bar').css({'transform': 'translateY(540px)'});
                 event.stopPropagation(); // evita que o menu continue existindo apos fechar   
                 $('.transparent-div').css({'display': 'block'});
             } else {
